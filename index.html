@@ -418,6 +418,10 @@
       display: flex;
       justify-content: center;
       gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      flex-wrap: nowrap;
       margin-bottom: 56px;
       border-bottom: 1px solid var(--blush);
     }
@@ -792,8 +796,8 @@
       .gallery-item:nth-child(5) { grid-column: span 1; }
       .contact-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; text-align: center; }
-      .services-tabs { flex-wrap: wrap; }
-      .tab-btn { padding: 10px 16px; font-size: 0.72rem; }
+      .services-tabs { flex-wrap: nowrap; justify-content: flex-start; }
+      .tab-btn { padding: 10px 16px; font-size: 0.72rem; white-space: nowrap; flex-shrink: 0; }
       .btn-wrap { text-align: center; }
     }
 
